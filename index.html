@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,18 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>釜山旅行</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16.png"
+    />
     <link rel="manifest" href="./manifest.json" />
     <meta name="theme-color" content="#7CB9E8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -516,14 +526,21 @@
       }
 
       @keyframes tabFadeIn {
-        from { opacity: 0; transform: translateY(4px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        .trip-panel.active { animation: none; }
+        .trip-panel.active {
+          animation: none;
+        }
       }
-
     </style>
   </head>
   <body>
@@ -575,768 +592,785 @@
       </div>
 
       <div class="content-wrap">
-
         <nav class="trip-tabs" aria-label="旅行行程頁籤">
-          <button class="trip-tab active" type="button" data-tab="overview" aria-selected="true">總覽</button>
-          <button class="trip-tab" type="button" data-tab="day1" aria-selected="false">D1</button>
-          <button class="trip-tab" type="button" data-tab="day2" aria-selected="false">D2</button>
-          <button class="trip-tab" type="button" data-tab="day3" aria-selected="false">D3</button>
-          <button class="trip-tab" type="button" data-tab="day4" aria-selected="false">D4</button>
-          <button class="trip-tab" type="button" data-tab="day5" aria-selected="false">D5</button>
+          <button
+            class="trip-tab active"
+            type="button"
+            data-tab="overview"
+            aria-selected="true"
+          >
+            總覽
+          </button>
+          <button
+            class="trip-tab"
+            type="button"
+            data-tab="day1"
+            aria-selected="false"
+          >
+            D1
+          </button>
+          <button
+            class="trip-tab"
+            type="button"
+            data-tab="day2"
+            aria-selected="false"
+          >
+            D2
+          </button>
+          <button
+            class="trip-tab"
+            type="button"
+            data-tab="day3"
+            aria-selected="false"
+          >
+            D3
+          </button>
+          <button
+            class="trip-tab"
+            type="button"
+            data-tab="day4"
+            aria-selected="false"
+          >
+            D4
+          </button>
+          <button
+            class="trip-tab"
+            type="button"
+            data-tab="day5"
+            aria-selected="false"
+          >
+            D5
+          </button>
         </nav>
 
         <section class="trip-panel active" data-panel="overview">
-<!-- 航班與住宿資訊 -->
-        <div class="info-card">
-          <div
-            class="washi-tape"
-            style="width: 65px; top: -8px; left: 15px; transform: rotate(-3deg)"
-          ></div>
-          <div
-            class="washi-tape beige"
-            style="width: 55px; top: -8px; right: 20px; transform: rotate(4deg)"
-          ></div>
-          <i class="ph-duotone ph-airplane-tilt card-theme-icon"></i>
-          <div class="info-title">
-            <i class="ph-duotone ph-airplane-in-flight"></i> 航班
+          <!-- 航班與住宿資訊 -->
+          <div class="info-card">
+            <div
+              class="washi-tape"
+              style="
+                width: 65px;
+                top: -8px;
+                left: 15px;
+                transform: rotate(-3deg);
+              "
+            ></div>
+            <div
+              class="washi-tape beige"
+              style="
+                width: 55px;
+                top: -8px;
+                right: 20px;
+                transform: rotate(4deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-airplane-tilt card-theme-icon"></i>
+            <div class="info-title">
+              <i class="ph-duotone ph-airplane-in-flight"></i> 航班
+            </div>
+            <div class="info-text">
+              <span style="color: var(--text-light)"
+                >去程 10/6 14:15 ~ 17:55</span
+              ><br />
+              釜山航空 BX 796 | KHH → PUS
+            </div>
+            <div class="info-text" style="margin-top: 8px">
+              <span style="color: var(--text-light)"
+                >回程 10/10 15:00 ~ 16:50</span
+              ><br />
+              德威航空 TW 675 | PUS → KHH
+            </div>
           </div>
-          <div class="info-text">
-            <span style="color: var(--text-light)">去程 10/6</span><br />
-            釜山航空 BX 796 | KHH 14:15 → PUS 17:55
-          </div>
-          <div class="info-text" style="margin-top: 8px">
-            <span style="color: var(--text-light)">回程 10/10</span><br />
-            德威航空 TW 675 | PUS 15:00 → KHH 16:50
-          </div>
-        </div>
 
-        <div class="info-card">
-          <div
-            class="washi-tape beige"
-            style="width: 70px; top: -8px; right: 20px; transform: rotate(4deg)"
-          ></div>
-          <i class="ph-duotone ph-house-line card-theme-icon alt"></i>
-          <div class="info-title">
-            <i class="ph-duotone ph-house-line"></i> 住宿
-          </div>
-          <div
-            class="info-text"
-            style="
-              font-size: 0.75rem;
-              color: var(--text-light);
-              margin-bottom: 8px;
-            "
-          >
-            * 皆為 16:00 後入住 / 12:00 前退房
-          </div>
-          <div class="info-text">
-            <strong>10/6 - 10/8</strong><br />
-            <a
-              href="https://m.map.naver.com/search2/search.naver?query=부산광역시 해운대구 구남로21번길 6"
-              target="_blank"
-              class="naver-link"
+          <div class="info-card">
+            <div
+              class="washi-tape beige"
+              style="
+                width: 70px;
+                top: -8px;
+                right: 20px;
+                transform: rotate(4deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-house-line card-theme-icon alt"></i>
+            <div class="info-title">
+              <i class="ph-duotone ph-house-line"></i> 住宿
+            </div>
+            <div
+              class="info-text"
+              style="
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin-bottom: 8px;
+              "
             >
-              Elbon The Stay
-            </a>
+              * 皆為 16:00 後入住 / 12:00 前退房
+            </div>
+            <div class="info-text">
+              <strong>10/6 - 10/8</strong><br />
+              <a href="#" class="naver-link" data-naver-query="부산광역시 해운대구 구남로21번길 6">
+                Elbon The Stay
+              </a>
+            </div>
+            <div class="info-text" style="margin-top: 8px">
+              <strong>10/8 - 10/10</strong><br />
+              <a href="#" class="naver-link" data-naver-query="부산 중구 용두산길 12 콘트호텔">
+                Cont Hotel
+              </a>
+            </div>
           </div>
-          <div class="info-text" style="margin-top: 8px">
-            <strong>10/8 - 10/10</strong><br />
-            <a
-              href="https://m.map.naver.com/search2/search.naver?query=부산 중구 용두산길 12 콘트호텔"
-              target="_blank"
-              class="naver-link"
-            >
-              Cont Hotel
-            </a>
-          </div>
-        </div>
         </section>
 
         <section class="trip-panel" data-panel="day1">
-<!-- Day 1 -->
-        <div class="day-card">
-          <div
-            class="washi-tape"
-            style="width: 65px; top: -8px; left: 20px; transform: rotate(-2deg)"
-          ></div>
-          <i class="ph-duotone ph-tote card-theme-icon sand"></i>
-          <div class="day-header">
-            <span class="day-date">10/6 (日)</span>
-            <h3 class="day-title">Day 1</h3>
+          <!-- Day 1 -->
+          <div class="day-card">
+            <div
+              class="washi-tape"
+              style="
+                width: 65px;
+                top: -8px;
+                left: 20px;
+                transform: rotate(-2deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-tote card-theme-icon sand"></i>
+            <div class="day-header">
+              <span class="day-date">10/6 (日)</span>
+              <h3 class="day-title">Day 1</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산광역시 해운대구 구남로21번길 6">
+                  Elbon The Stay
+                </a>
+                <br />
+                check in
+              </li>
+              <li>
+                <span class="badge badge-dinner"
+                  ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 해운대해변로357번길 4">
+                  三環畜產 中洞店
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 12:00 - 23:00
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-shopping"
+                  ><i class="ph-bold ph-tote"></i> 逛街</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 구남로 17">
+                  三麗鷗
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 11:00 - 20:00
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="timeline">
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산광역시 해운대구 구남로21번길 6"
-                target="_blank"
-                class="naver-link"
-              >
-                Elbon The Stay
-              </a>
-              <br />
-              check in
-            </li>
-            <li>
-              <span class="badge badge-dinner"
-                ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 해운대해변로357번길 4"
-                target="_blank"
-                class="naver-link"
-              >
-                三環畜產 中洞店
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 12:00 - 23:00
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-shopping"
-                ><i class="ph-bold ph-tote"></i> 逛街</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 구남로 17"
-                target="_blank"
-                class="naver-link"
-              >
-                三麗鷗
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 11:00 - 20:00
-              </div>
-            </li>
-          </ul>
-        </div>
         </section>
 
         <section class="trip-panel" data-panel="day2">
-<!-- Day 2 -->
-        <div class="day-card">
-          <div
-            class="washi-tape beige"
-            style="width: 60px; top: -8px; right: 20px; transform: rotate(3deg)"
-          ></div>
-          <i class="ph-duotone ph-tram card-theme-icon"></i>
-          <div class="day-header">
-            <span class="day-date">10/7 (一)</span>
-            <h3 class="day-title">Day 2</h3>
+          <!-- Day 2 -->
+          <div class="day-card">
+            <div
+              class="washi-tape beige"
+              style="
+                width: 60px;
+                top: -8px;
+                right: 20px;
+                transform: rotate(3deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-tram card-theme-icon"></i>
+            <div class="day-header">
+              <span class="day-date">10/7 (一)</span>
+              <h3 class="day-title">Day 2</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <span class="badge badge-breakfast"
+                  ><i class="ph-bold ph-coffee"></i> 早餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 달맞이길62번길 3 B1층">
+                  Who's who Mumu Bakery
+                </a>
+                <span
+                  style="
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                  "
+                >
+                  ＊杜拜巧克力Q餅
+                </span>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 09:00 - 19:00
+                </div>
+              </li>
+              <li>
+                <a href="#" class="naver-link" data-naver-query="부산광역시 해운대구 달맞이길62번길 13">
+                  尾埔站
+                </a>
+                <span class="badge badge-waring">09:30~10:00</span>
+                <br />
+                天空膠囊列車 (尾埔 → 青沙浦)
+              </li>
+              <li>
+                灌籃高手平交道<br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 청사포로128번길 2">
+                  PHOTOWAVE 選物店
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 10:00 - 19:00
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-lunch"
+                  ><i class="ph-bold ph-fork-knife"></i> 午餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산광역시 해운대구 중동 570 2층">
+                  八道海帶
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 08:00 - 20:30
+                  (午休15:00-17:00)
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                >
+                <span class="badge badge-pass-a"
+                  ><i class="ph-bold ph-ticket"></i> Pass 紫色A區</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 기장군 기장읍 기장해안로 205">
+                  斜坡滑車
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i>10:00-19:00 (平日)
+                </div>
+              </li>
+              <li>
+                <a href="#" class="naver-link" data-naver-query="해동용궁사">
+                  東海龍宮
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 04:30 - 19:20
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                >
+                <span class="badge badge-pass-b"
+                  ><i class="ph-bold ph-ticket"></i> Pass 藍色B區</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 송정중앙로8번길 60">
+                  松亭站 </a
+                ><br />
+                海岸列車 (松亭 → 尾埔)
+              </li>
+              <li>
+                <span class="badge badge-dinner"
+                  ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 구남로41번길 46">
+                  31公分海鮮刀削麵
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 11:00 - 21:30 (午休
+                  14:40-16:00)
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-shopping"
+                  ><i class="ph-bold ph-tote"></i> 逛街</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 구남로 27">
+                  Olive Young
+                </a>
+                <span
+                  style="
+                    font-size: 0.78rem;
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                    text-decoration: underline double;
+                    text-underline-offset: 2px;
+                  "
+                  >15,000 免稅</span
+                >
+                <br />
+                <span
+                  style="
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                  "
+                >
+                  ＊Round Around 香氛
+                </span>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 10:00 - 22:30
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="timeline">
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산광역시 해운대구 달맞이길62번길 13"
-                target="_blank"
-                class="naver-link"
-              >
-                尾埔站
-              </a>
-              <span class="badge badge-waring">09:30~10:00</span>
-              <br />
-              天空膠囊列車 (尾埔 → 青沙浦)
-            </li>
-            <li>
-              灌籃高手平交道<br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 청사포로128번길 2"
-                target="_blank"
-                class="naver-link"
-              >
-                PHOTOWAVE 選物店
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 10:00 - 19:00
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-lunch"
-                ><i class="ph-bold ph-fork-knife"></i> 午餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산광역시 해운대구 중동 570 2층"
-                target="_blank"
-                class="naver-link"
-              >
-                八道海帶
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 08:00 - 20:30
-                (午休15:00-17:00)
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <span class="badge badge-pass-a"
-                ><i class="ph-bold ph-ticket"></i> Pass 紫色A區</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 기장군 기장읍 기장해안로 205"
-                target="_blank"
-                class="naver-link"
-              >
-                斜坡滑車
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i>10:00-19:00 (平日)
-              </div>
-            </li>
-            <li>
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=해동용궁사"
-                target="_blank"
-                class="naver-link"
-              >
-                東海龍宮
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 04:30 - 19:20
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <span class="badge badge-pass-b"
-                ><i class="ph-bold ph-ticket"></i> Pass 藍色B區</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 송정중앙로8번길 60"
-                target="_blank"
-                class="naver-link"
-              >
-                松亭站 </a
-              ><br />
-              海岸列車 (松亭 → 尾埔)
-            </li>
-            <li>
-              <span class="badge badge-dinner"
-                ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 구남로41번길 46"
-                target="_blank"
-                class="naver-link"
-              >
-                31公分海鮮刀削麵
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 11:00 - 21:30 (午休
-                14:40-16:00)
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-shopping"
-                ><i class="ph-bold ph-tote"></i> 逛街</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 구남로 27"
-                target="_blank"
-                class="naver-link"
-              >
-                Olive Young
-              </a>
-              <span
-                style="
-                  font-size: 0.78rem;
-                  font-weight: 700;
-                  display: inline-block;
-                  margin-top: 3px;
-                  text-decoration: underline double;
-                  text-underline-offset: 2px;
-                "
-                >15,000 免稅</span
-              >
-              <br />
-              <span
-                style="font-weight: 700; display: inline-block; margin-top: 3px"
-              >
-                ＊Round Around 香氛
-              </span>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 10:00 - 22:30
-              </div>
-            </li>
-          </ul>
-        </div>
         </section>
 
         <section class="trip-panel" data-panel="day3">
-<!-- Day 3 -->
-        <div class="day-card">
-          <div
-            class="washi-tape"
-            style="
-              width: 55px;
-              top: -8px;
-              left: auto;
-              right: 20%;
-              transform: rotate(5deg);
-            "
-          ></div>
-          <i class="ph-duotone ph-hamburger card-theme-icon alt"></i>
-          <div class="day-header">
-            <span class="day-date">10/8 (二)</span>
-            <h3 class="day-title">Day 3</h3>
-          </div>
-          <ul class="timeline">
-            <li>
-              <span class="badge badge-breakfast"
-                ><i class="ph-bold ph-coffee"></i> 早午餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 해운대구 해운대해변로 277 5층"
-                target="_blank"
-                class="naver-link"
-              >
-                Working Holiday
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 09:00 - 22:00
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 중구 용두산길 12 콘트호텔"
-                target="_blank"
-                class="naver-link"
-              >
-                Cont Hotel
-              </a>
-              <br />
-              寄放行李
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 16:00 後可入住
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 부산진구 중앙대로 709"
-                target="_blank"
-                class="naver-link"
-              >
-                釜山銀行西面分行
-              </a>
-              <br />
-              周邊下車
-            </li>
-            <li>
-              <span class="badge badge-shopping"
-                ><i class="ph-bold ph-tote"></i> 逛街</span
-              ><br />
-              西面地下街 (2號出口下去)
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 商家約 10:00 - 22:00
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-beauty"
-                ><i class="ph-bold ph-sparkle"></i> 醫美保養</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산광역시 부산진구 부전로 77"
-                target="_blank"
-                class="naver-link"
-              >
-                Elblanc Clinic
-              </a>
-              <span class="badge badge-waring">預約 16:30</span>
-              <br />
-              <!-- 預約<span class="timeline-time" style="margin-left: 5px"
+          <!-- Day 3 -->
+          <div class="day-card">
+            <div
+              class="washi-tape"
+              style="
+                width: 55px;
+                top: -8px;
+                left: auto;
+                right: 20%;
+                transform: rotate(5deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-hamburger card-theme-icon alt"></i>
+            <div class="day-header">
+              <span class="day-date">10/8 (二)</span>
+              <h3 class="day-title">Day 3</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <span class="badge badge-breakfast"
+                  ><i class="ph-bold ph-coffee"></i> 早午餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 해운대구 해운대해변로 277 5층">
+                  Working Holiday </a
+                ><br />
+                <span
+                  style="
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                  "
+                >
+                  ＊10:30前到
+                </span>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 09:00 - 22:00
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 중구 용두산길 12 콘트호텔">
+                  Cont Hotel
+                </a>
+                <br />
+                寄放行李
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 16:00 後可入住
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                >
+                <br />
+                <a href="#" class="naver-link" data-naver-query="부산 부산진구 중앙대로 709">
+                  釜山銀行西面分行
+                </a>
+                <br />
+                周邊下車
+              </li>
+              <li>
+                <span class="badge badge-shopping"
+                  ><i class="ph-bold ph-tote"></i> 逛街</span
+                ><br />
+                西面地下街 (2號出口下去)
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 商家約 10:00 - 22:00
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-beauty"
+                  ><i class="ph-bold ph-sparkle"></i> 醫美保養</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산광역시 부산진구 부전로 77">
+                  Elblanc Clinic
+                </a>
+                <span class="badge badge-waring">預約 16:30</span>
+                <br />
+                <!-- 預約<span class="timeline-time" style="margin-left: 5px"
                 >16:30</span
               ><br /> -->
-              (1號出口上去，直走看到星巴克右轉)<br />
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              ></div>
-            </li>
-            <li>
-              <span class="badge badge-dinner"
-                ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
-              ><br />
-              獵奇年糕 + 60雞炸雞
-              <br />
-              <span
-                style="
-                  font-size: 0.85rem;
-                  font-weight: 700;
-                  display: inline-block;
-                  margin-top: 3px;
-                "
-              >
-                ＊外送的民族 (21:00 前預訂)
-              </span>
-              <br />
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: flex-start;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock" style="margin-top: 2px"></i>
-                <div>獵奇年糕 11:00 - 22:00<br />60雞炸雞 12:00 - 22:30</div>
-              </div>
-            </li>
-          </ul>
-        </div>
+                (1號出口上去，直走看到星巴克右轉)<br />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                ></div>
+              </li>
+              <li>
+                <span class="badge badge-dinner"
+                  ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
+                ><br />
+                獵奇年糕 + 60雞炸雞
+                <br />
+                <span
+                  style="
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                  "
+                  >Working Holiday ＊外送的民族 (21:00前預訂)
+                </span>
+                <br />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock" style="margin-top: 2px"></i>
+                  <div>獵奇年糕 11:00 - 22:00<br />60雞炸雞 12:00 - 22:30</div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="trip-panel" data-panel="day4">
-<!-- Day 4 -->
-        <div class="day-card">
-          <div
-            class="washi-tape beige"
-            style="width: 70px; top: -8px; left: 20px; transform: rotate(-3deg)"
-          ></div>
-          <i class="ph-duotone ph-coffee card-theme-icon sand"></i>
-          <div class="day-header">
-            <span class="day-date">10/9 (三)</span>
-            <h3 class="day-title">Day 4</h3>
-          </div>
-          <ul class="timeline">
-            <li>
-              <span class="badge badge-taxi">
-                <i class="ph-bold ph-taxi"></i> 計程車</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 영도구 흰여울길 207 족욕카페 뷰 2호점"
-                target="_blank"
-                class="naver-link"
-              >
-                足浴咖啡廳
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 10:00 - 21:00
-              </div>
-            </li>
-            <li>白淺灘文化村</li>
-            <li>
-              <span class="badge badge-lunch"
-                ><i class="ph-bold ph-fork-knife"></i> 午餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 영도구 절영로 222"
-                target="_blank"
-                class="naver-link"
-              >
-                Burger Yo Busan
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 11:00 - 20:00 (午休
-                15:30-16:30)
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <span class="badge badge-pass-b"
-                ><i class="ph-bold ph-ticket"></i> Pass 藍色B區</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=아르떼뮤지엄 부산"
-                target="_blank"
-                class="naver-link"
-              >
-                Arte Museum
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 10:00 - 21:00 (最後入場
-                20:00)
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-dinner"
-                ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=BIFF광장"
-                target="_blank"
-                class="naver-link"
-              >
-                BIFF廣場
-              </a>
-              +
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=자갈치시장"
-                target="_blank"
-                class="naver-link"
-                >札嘎其市場</a
-              >
-              <br />
-              <span
-                style="font-weight: 700; display: inline-block; margin-top: 3px"
-              >
-                ＊元祖糖餅
-              </span>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: flex-start;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock" style="margin-top: 2px"></i>
-                <div>
-                  札嘎其市場 05:00 - 22:00<br />BIFF廣場攤販約 14:00 - 22:30
+          <!-- Day 4 -->
+          <div class="day-card">
+            <div
+              class="washi-tape beige"
+              style="
+                width: 70px;
+                top: -8px;
+                left: 20px;
+                transform: rotate(-3deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-coffee card-theme-icon sand"></i>
+            <div class="day-header">
+              <span class="day-date">10/9 (三)</span>
+              <h3 class="day-title">Day 4</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <span class="badge badge-taxi">
+                  <i class="ph-bold ph-taxi"></i> 計程車</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 영도구 흰여울길 207 족욕카페 뷰 2호점">
+                  足浴咖啡廳
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 10:00 - 21:00
                 </div>
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-shopping"
-                ><i class="ph-bold ph-tote"></i> 逛街</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 중구 광복로 31"
-                target="_blank"
-                class="naver-link"
-              >
-                國際市場藥妝店
-              </a>
-              <span
-                style="
-                  font-size: 0.78rem;
-                  font-weight: 700;
-                  display: inline-block;
-                  margin-top: 3px;
-                  text-decoration: underline double;
-                  text-underline-offset: 2px;
-                "
-                >15,000 免稅</span
-              >
-              <br />
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 08:00 - 21:30
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+              <li>白淺灘文化村</li>
+              <li>
+                <span class="badge badge-lunch"
+                  ><i class="ph-bold ph-fork-knife"></i> 午餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 영도구 절영로 231 1층">
+                  Mahooga 烏龍麵店
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 10:30 - 19:00
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                >
+                <span class="badge badge-pass-b"
+                  ><i class="ph-bold ph-ticket"></i> Pass 藍色B區</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="아르떼뮤지엄 부산">
+                  Arte Museum
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 10:00 - 21:00 (最後入場
+                  20:00)
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-dinner"
+                  ><i class="ph-bold ph-fork-knife"></i> 晚餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="BIFF광장">
+                  BIFF廣場
+                </a>
+                +
+                <a href="#" class="naver-link" data-naver-query="부산 중구 자갈치로 42">新東亞水產市場</a
+                >
+                <br />
+                <span
+                  style="
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                  "
+                >
+                  ＊BIFF：元祖糖餅<br />
+                  ＊新東亞：85、87攤位
+                </span>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock" style="margin-top: 2px"></i>
+                  <div>
+                    BIFF廣場攤販約 14:00 - 22:30<br />
+                    新東亞水產市場 11:00 - 19:30
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-shopping"
+                  ><i class="ph-bold ph-tote"></i> 逛街</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 중구 광복로 31">
+                  國際市場藥妝店
+                </a>
+                <span
+                  style="
+                    font-size: 0.78rem;
+                    font-weight: 700;
+                    display: inline-block;
+                    margin-top: 3px;
+                    text-decoration: underline double;
+                    text-underline-offset: 2px;
+                  "
+                  >15,000 免稅</span
+                >
+                <br />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 08:00 - 21:30
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="trip-panel" data-panel="day5">
-<!-- Day 5 -->
-        <div class="day-card">
-          <div
-            class="washi-tape"
-            style="
-              width: 60px;
-              top: -8px;
-              left: 50%;
-              transform: translateX(-50%) rotate(-4deg);
-            "
-          ></div>
-          <i class="ph-duotone ph-suitcase-rolling card-theme-icon"></i>
-          <div class="day-header">
-            <span class="day-date">10/10 (四)</span>
-            <h3 class="day-title">Day 5</h3>
+          <!-- Day 5 -->
+          <div class="day-card">
+            <div
+              class="washi-tape"
+              style="
+                width: 60px;
+                top: -8px;
+                left: 50%;
+                transform: translateX(-50%) rotate(-4deg);
+              "
+            ></div>
+            <i class="ph-duotone ph-suitcase-rolling card-theme-icon"></i>
+            <div class="day-header">
+              <span class="day-date">10/10 (四)</span>
+              <h3 class="day-title">Day 5</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <span class="badge badge-breakfast"
+                  ><i class="ph-bold ph-coffee"></i> 早午餐</span
+                ><br />
+                <a href="#" class="naver-link" data-naver-query="부산 중구 구덕로34번길 5 1층">
+                  南浦雪濃湯
+                </a>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-light);
+                    margin-top: 4px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                >
+                  <i class="ph-duotone ph-clock"></i> 24 小時營業
+                </div>
+              </li>
+              <li>
+                <span class="badge badge-taxi"
+                  ><i class="ph-bold ph-taxi"></i> 計程車</span
+                >
+                <span class="badge badge-waring">11:20 出發</span>
+                <br />
+                <a href="#" class="naver-link" data-naver-query="김해국제공항">
+                  金海國際機場
+                </a>
+                <br />
+                前往 2 樓 GATE 4 自助退稅機掃描護照與單據，接著辦理行李託運。
+              </li>
+            </ul>
           </div>
-          <ul class="timeline">
-            <li>
-              <span class="badge badge-breakfast"
-                ><i class="ph-bold ph-coffee"></i> 早餐</span
-              ><br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=부산 중구 광복로85번길 8"
-                target="_blank"
-                class="naver-link"
-              >
-                濟州家海鮮粥
-              </a>
-              <div
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-light);
-                  margin-top: 4px;
-                  display: flex;
-                  align-items: center;
-                  gap: 4px;
-                "
-              >
-                <i class="ph-duotone ph-clock"></i> 07:00 - 21:00
-              </div>
-            </li>
-            <li>
-              <span class="badge badge-taxi"
-                ><i class="ph-bold ph-taxi"></i> 計程車</span
-              >
-              <span class="badge badge-waring">11:20 出發</span>
-              <br />
-              <a
-                href="https://m.map.naver.com/search2/search.naver?query=김해국제공항"
-                target="_blank"
-                class="naver-link"
-              >
-                金海國際機場
-              </a>
-              <br />
-              前往 2 樓 GATE 4 自助退稅機掃描護照與單據，接著辦理行李託運。
-            </li>
-          </ul>
-        </div>
         </section>
 
         <div class="footer">
@@ -1345,7 +1379,6 @@
         </div>
       </div>
     </div>
-
 
     <script>
       (() => {
@@ -1366,7 +1399,7 @@
           window.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth"
+            behavior: "smooth",
           });
 
           if (updateHash) {
@@ -1382,6 +1415,53 @@
         if (tabs.some((tab) => tab.dataset.tab === initial)) {
           switchTab(initial, false);
         }
+      })();
+    </script>
+
+
+    <script>
+      (() => {
+        function openNaverMap(query) {
+          const encodedQuery = encodeURIComponent(query);
+          const appUrl =
+            "nmap://search?query=" +
+            encodedQuery +
+            "&appname=busan-trip";
+
+          const webUrl =
+            "https://m.map.naver.com/search2/search.naver?query=" +
+            encodedQuery;
+
+          let fallbackTimer = null;
+
+          const handleVisibility = () => {
+            if (document.hidden && fallbackTimer) {
+              clearTimeout(fallbackTimer);
+              fallbackTimer = null;
+            }
+          };
+
+          document.addEventListener("visibilitychange", handleVisibility, {
+            once: true,
+          });
+
+          window.location.href = appUrl;
+
+          fallbackTimer = setTimeout(() => {
+            if (!document.hidden) {
+              window.location.href = webUrl;
+            }
+          }, 1400);
+        }
+
+        document
+          .querySelectorAll(".naver-link[data-naver-query]")
+          .forEach((link) => {
+            link.addEventListener("click", (event) => {
+              event.preventDefault();
+              openNaverMap(link.dataset.naverQuery);
+            });
+          });
       })();
     </script>
 

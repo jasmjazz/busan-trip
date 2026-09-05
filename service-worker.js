@@ -1,4 +1,4 @@
-const CACHE_NAME = "busan-trip-final-v1";
+const CACHE_NAME = "busan-trip-final-v2";
 
 const APP_SHELL = [
   "./",
